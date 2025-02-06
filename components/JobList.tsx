@@ -5,9 +5,9 @@ import JobCard from "./JobCard"
 const JobList = ({joblist})=>{
     return (
        <View style={styles.list}>
-         {joblist?.map((job)=>(
+         {joblist?.map((job,index)=>(
            <JobCard 
-           key={job?.id}
+           key={job?.id + index}
            image={job?.creatives?.[0]?.thumb_url}
            title={job?.title} 
            location={job?.primary_details?.Place} 
