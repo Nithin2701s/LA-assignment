@@ -34,7 +34,7 @@ const JobCard = ({ job }) => {
     shadow: colorScheme === "dark" ? "#fff" : "#000",
     text: colorScheme === "dark" ? "#fff" : "#000",
     subText: colorScheme === "dark" ? "#bbb" : "#111",
-    overlay: colorScheme === "dark" ? "rgba(0,0,0,0.6)" : "rgba(255,255,255,0.6)",
+    overlay: colorScheme === "dark" ? "rgba(24, 16, 44, 0.6)" : "rgba(255,255,255,0.6)",
   };
 
   return (
