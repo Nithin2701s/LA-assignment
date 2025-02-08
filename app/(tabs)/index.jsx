@@ -27,7 +27,7 @@ const Index = () => {
       data={joblist}
       keyExtractor={(item, index) => item?.id ? `job-${item.id}` : `job-fallback-${index}`}
       renderItem={({ item }) => <JobList joblist={[item]} />}
-      ListHeaderComponent={<Text style={{ fontSize: 20, fontWeight: 700, padding: 5, marginLeft: 20 }}>Jobs</Text>}
+      ListHeaderComponent={<Text style={{ fontSize: 20, fontWeight: 700, padding: 5, marginLeft: 20,color:colorScheme === "dark" ? "#fff" : "#000" }}>Jobs</Text>}
       contentContainerStyle={{ paddingVertical: 20, backgroundColor: colorScheme === 'light' ? '#fff' : '#111' }}
       onEndReached={() => getJobs(page)}
       onEndReachedThreshold={0.5}

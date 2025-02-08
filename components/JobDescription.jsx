@@ -9,7 +9,7 @@ const JobDescription= ({ description, colorScheme }) => {
         Job Description
       </Text>
       <Text style={[styles.description, {  color: colorScheme ==='dark'? '#cff':'#000' }]}>
-        {description || "No description provided for this job."}
+      {description}
       </Text>
     </View>
   );
