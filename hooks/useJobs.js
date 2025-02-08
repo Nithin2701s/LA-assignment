@@ -5,7 +5,6 @@ export const useJobs = () => {
   const [page, setPage] = useState(1);
   const [loading, setLoading] = useState(false);
   const [hasMore, setHasMore] = useState(true);
-
   const getJobs = async (pageNum) => {
     if (loading || !hasMore) return;
     setLoading(true);
@@ -24,7 +23,7 @@ export const useJobs = () => {
         setHasMore(false);
       }
     } catch (error) {
-      console.error('Error fetching jobs:', error);
+      // console.log('Error fetching jobs:', error);
     } finally {
       setLoading(false);
     }
