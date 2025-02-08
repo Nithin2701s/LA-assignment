@@ -31,6 +31,16 @@ const RootLayout = () => {
               alignItems: "center",
             }}
           >
+             <Text
+              style={{
+                fontSize: 25,
+                fontWeight: "700",
+                marginLeft: 10,
+                color: colorScheme === "dark" ? "#fff" : "#000",
+              }}
+            >
+              Talent{" "}
+            </Text>
             <Image
               source={require("../assets/images/original.png")}
               style={{ height: 40, width: 40 }}
@@ -43,7 +53,7 @@ const RootLayout = () => {
                 color: colorScheme === "dark" ? "#fff" : "#000",
               }}
             >
-              Talentsync
+            Sync
             </Text>
           </View>
 
